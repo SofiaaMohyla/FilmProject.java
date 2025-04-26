@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #3d8bff;
+  }
+  
+  .logout-btn {
+    background: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background: #ff4d4d;
+    color: white;
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-overlay {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .main-content {
+    padding: 40px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 50px 0 20px;
+    color: white;
+    border-left: 4px solid #3d8bff;
+    padding-left: 12px;
+  }
+  
+  .movie-grid,
+  .saved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+  }
+  
+  .movie-card,
+  .saved-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover,
+  .saved-item:hover {
+    transform: translateY(-5px);
+    background-color: #2b2b2b;
+  }
+  
+  .save-btn {
+    margin-top: 12px;
+    background-color: #3d8bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #296fd8;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #222;
+    background-color: #111;
+    margin-top: 60px;
+  }
+  

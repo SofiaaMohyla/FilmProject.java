@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #111;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 8px rgba(255, 255, 255, 0.05);
+  }
+  
+  .sidebar h1 {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .menu-item:hover {
+    background-color: #2740E2;
+    transform: translateX(5px);
+  }
+  
+  .menu-item.active {
+    background-color: #2740E2;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .browse-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #search {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .browse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .show-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .show-card:hover {
+    transform: translateY(-5px);
+    background-color: #2a2a2a;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-SHOWS – Home</title>
+  <link rel="stylesheet" href="Home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🎬 A-SHOWS</div>
+    <nav class="nav-links">
+      <a href="Main.html" class="nav-link">Back to Main</a>
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Browse</a>
+      <a href="#" class="nav-link">Saved</a>
+      <a href="#" class="nav-link">Profile</a>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1 id="welcome-title">Welcome to A-SHOWS!</h1>
+      <p class="hero-subtitle">Your personalized cinema universe 🌌</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <h2 class="section-title">🔥 Trending Now</h2>
+    <div class="movie-grid" id="movie-grid"></div>
+
+    <h2 class="section-title">📌 Your Saved List</h2>
+    <div class="saved-grid" id="saved-list"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 A-SHOWS. All rights reserved.</p>
+  </footer>
+
+  <script src="Home.js"></script>
+</body>
+</html>

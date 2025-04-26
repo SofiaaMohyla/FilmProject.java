@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A-SHOWS – Sign Up</title>
+  <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+  <div class="container">
+    <h1>A-SHOWS</h1>
+    <form id="signup-form">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required />
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm password</label>
+        <input type="password" id="confirm-password" placeholder="Repeat password" required />
+      </div>
+      <button type="submit">Sign Up</button>
+      <div id="signup-message" class="message"></div>
+    </form>
+    <p>Already have an account? <a href="LogIn.html">Log in</a></p>
+  </div>
+
+  <script src="SignUp.js"></script>
+  <div id="overlay-animation" class="overlay-hidden">
+    <div class="animation-box">
+      <p id="animation-text">Loading...</p>
+    </div>
+  </div>
+  
+</body>
+</html>
